@@ -1,0 +1,116 @@
+<app-header></app-header>
+
+<!-- <h1>Hello {{title}}</h1>  
+    {{title}}It is interpolation where the dynamic data is fetched out to html file from ts file  
+    In interpolation we can display dynamic data and as well as do arithmatic operations and many more
+-->
+<h1>Hello Angular 12</h1>
+<app-login></app-login>
+<!-- Here are some events which occurs on button click, inputting values and on mouse positions -->
+<!-- <button (click)="getData('hello')">Click Me</button>
+<br><br>
+<input type="text" #box (keyup)="getData(box.value)" placeholder="event keyup">
+<br><br>
+<input type="text" #box1 (keydown)="getData(box1.value)" placeholder="event keydown">
+<br><br>
+<input type="text" #box2 (blur)="getData(box2.value)" placeholder="event blur">
+<br><br>
+<input type="text" #box3 (input)="getData(box3.value)" placeholder="event input">
+
+<br><br>
+<h1 (mouseover)="getData('over')">Prashant</h1>
+
+<br><br>
+<h1 (mouseleave)="getData('leave')">Thakur</h1> -->
+
+<!--  How to get value of input box on clicking button  -->
+<!-- <input type="text" #box name="username" placeholder="Enter Name">
+<button #box (click)="getValue(box.placeholder)">Click</button>
+<p>Box value is : {{displayVal}}</p>  -->
+
+
+<!--Difference between Interpolation and Property Binding -->
+<!-- <input type="text" name="username" value="{{name}}" disabled="{{disable}}">  -->
+<!--Values of value and disabled attributes are given through interpolation
+Boolean values are not working properly -->
+<!-- <br><br>
+<input type="text" name="username" [value]="name" [disabled]="disable"> -->
+<!-- Values of value and disabled attributes are given through Poperty binding
+Boolean values are working properly -->
+
+
+<!-- If Else Condition -->
+<!-- <h1 *ngIf="show=='yes'; then ifBlock else elseBlock"></h1>
+
+<ng-template #ifBlock>
+    <h1>If Condition</h1>
+</ng-template>
+
+<ng-template #elseBlock>
+    <h1>Else Condition</h1>
+</ng-template> -->
+
+
+<!-- Else If condition -->
+<!-- For Else if condition we have not any particular syntax we use ngIf with property binding -->
+<!-- <ng-template [ngIf]="color==='red'">
+    <h1 style="color: red;">Red Color</h1>
+</ng-template>
+<ng-template [ngIf]="color==='green'">
+    <h1 style="color: green;">Green Color</h1>
+</ng-template>
+<ng-template [ngIf]="color==='blue'">
+    <h1 style="color: blue;">Blue Color</h1>
+</ng-template> -->
+
+
+<!-- Switch Case -->
+<!-- <div [ngSwitch]="color">
+    <h1 *ngSwitchCase="'red'" style="color: red;">Red Color</h1>
+    <h1 *ngSwitchCase="'green'" style="color: green;">Green Color</h1>
+    <h1 *ngSwitchCase="'blue'" style="color: blue;">Blue Color</h1>
+    <h1 *ngSwitchCase="'orange'" style="color: orange;">Orange Color</h1>
+    <h1 *ngSwitchCase="'yellow'" style="color: yellow;">Yellow Color</h1>
+    <h1 *ngSwitchCase="'skyblue'" style="color: skyblue;">Skyblue Color</h1>
+    <h1 *ngSwitchDefault>Unknown Color</h1>
+</div> -->
+
+<!-- For Loop -->
+<!-- This is for a simple array of strings -->
+<!-- <h3 *ngFor="let item of users">{{item}}</h3>  -->
+
+<!-- This is for the array of objects -->
+<!-- <table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of userDetails">
+            <td>{{item.name}}</td>
+            <td>{{item.email}}</td>
+            <td>{{item.phone}}</td>
+        </tr>
+    </tbody>
+</table> -->
+
+
+<!-- Nested Loop -->
+<!-- <ul *ngFor="let user of userDetails">
+    <li>Name: {{user.name}}</li>
+    <li>Email: {{user.email}}</li>
+    <li>Phone: {{user.phone}}</li>
+    <li>Social Accounts:</li>
+    <ul *ngFor="let account of user.socialAccounts">
+        <li>{{account}}</li>
+    </ul>
+</ul> -->
+
+
+<!-- Style Binding -->
+<!-- When we give the style to an element with the property binding is called style binding -->
+<!-- <h1 [style.color]="color" [style.backgroundColor]="bgColor">Style Binding</h1>
+<button (click)="updateColor()">Update Color</button> -->
